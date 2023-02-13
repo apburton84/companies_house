@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "companies-house"
+version = "0.1.0"
+description = ""
+authors = ["none"]
+readme = "README.md"
+packages = [{include = "companies_house"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+baseline = { path = "../Templates/baseline/", develop = true }
+requests = "^2.28.2"
+pydantic = "^1.10.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
